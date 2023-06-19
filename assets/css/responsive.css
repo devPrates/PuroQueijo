@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .nav-link {
+        font-family: 'Courgette';
+    }
+
+    .home__img{
+        display: none;
+    }
+
+    .home__info {
+        text-align: center;
+        align-items: center;
+        padding-bottom: 30px;
+        background-image: url(../img/back-responsive.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .home__info-titulo {
+        font-size: 40px;
+    }
+
+    .sobre__conteudo {
+        width: 90%;
+    }
+    .sobre__conteudo,.sobre__card-section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .contato__btn {
+        flex-direction: column;
+    }
+
+    .contato__map iframe {
+        width: 550px;
+    }
+
+    .contato__social-titulo,.contato__social-sub{
+        display: none;
+    }
+
+    .footer__conteudo {
+        padding: 20px 50px;
+    }
+}
