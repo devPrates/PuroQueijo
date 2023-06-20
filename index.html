@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Puro Queijo</title>
 </head>
 
 <body>
-    <header class="menu">
+    <header class="menu_menu">
         <nav class="nav-bar">
             <div class="logo">
                 <h1><span class="span">Puro</span> Queijo</h1>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#Produto" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#Contato" class="nav-link">Contato</a></li>
                 </ul>
             </div>
 
@@ -32,10 +34,10 @@
         </nav>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#Produtos" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#Contato" class="nav-link">Contato</a></li>
             </ul>
 
             <div class="login-button">
@@ -75,183 +77,84 @@
         <!-- HOME section end -->
 
 
+
+      
+
         <!-- Produto section start -->
+        
         <section class="produto__section" id="Produto">
-            <div class="container">
-                <div class="produto__header">
-                    <p class="produto__title"><span class="span">Nossos</span> Produtos</p>
-                    <p class="produto__sub">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim adipisci molestiae ex nobis consectetur odio error fugit</p>
-                </div>
-                <div class="slider-container" item-display-d="2" item-display-t="3" item-display-m="2">
-                    <div class="slider-width">
-                        <div class="produto__card">
-                            <div class="produto__card-img">
-                               <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
-                            </div>
-                            <div class="produto__card-conteudo">
-                               <div class="produto__card-head">
-                                  <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                                  <span class="produto__card-sub">Calabresa</span>
-                               </div>
- 
-                               <div class="produto__card-body">
-                                  <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                                     elit.</span>
-                                  <div class="produto__card-risco"></div>
-                               </div>
- 
-                               <div class="produto__card-tamanho">
-                                  <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                                  <div class="produto__card-tamanho-flex">
-                                     <div class="produto__card-tamanho-item">900 G</div>
-                                     <div class="produto__card-tamanho-item">900 G</div>
-                                     <div class="produto__card-tamanho-item">900 G</div>
-                                  </div>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="produto__card">
-                           <div class="produto__card-img">
-                              <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
-                           </div>
-                           <div class="produto__card-conteudo">
-                              <div class="produto__card-head">
-                                 <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                                 <span class="produto__card-sub">Calabresa</span>
-                              </div>
-
-                              <div class="produto__card-body">
-                                 <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.</span>
-                                 <div class="produto__card-risco"></div>
-                              </div>
-
-                              <div class="produto__card-tamanho">
-                                 <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                                 <div class="produto__card-tamanho-flex">
-                                    <div class="produto__card-tamanho-item">900 G</div>
-                                    <div class="produto__card-tamanho-item">900 G</div>
-                                    <div class="produto__card-tamanho-item">900 G</div>
-                                 </div>
-                              </div>
-                           </div>
+         <div class="container">
+             <div class="produto__header">
+                 <p class="produto__title"><span class="span">Nossos</span> Produtos</p>
+                 <p class="produto__sub">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim adipisci molestiae ex nobis consectetur odio error fugit</p>
+             </div>
+             <div class="menu">
+               <input class="state" type="radio" title="tab-1" name="tabs-state" id="tab-1" checked />
+               <input class="state" type="radio" title="tab-2" name="tabs-state" id="tab-2" />
+               <input class="state" type="radio" title="tab-3" name="tabs-state" id="tab-3" />
+               <input class="state" type="radio" title="tab-4" name="tabs-state" id="tab-4" />
+               <div class="menu_tabs">
+                 <label id='tab-l1' for='tab-1'><i class='bx bx-food-menu'></i>Pão de Queijo</label>
+                 <label id='tab-l2' for='tab-2'><i class='bx bxs-baguette'></i>Chipa</label>
+                 <label id='tab-l3' for='tab-3'><i class='bx bxs-baguette'></i>Churos</label>
+               </div>
+               <section class="menu_panel">
+                 <article id="tab_p1" class="panel active">
+                  <div class="blog-slider">
+                     <div class="blog-slider__wrp swiper-wrapper">
+                       <div class="blog-slider__item swiper-slide">
+                         <div class="blog-slider__img">
+                           
+                           <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+                         </div>
+                         <div class="blog-slider__content">
+                           <span class="blog-slider__code">26 December 2019</span>
+                           <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                           <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                           <a href="#" class="blog-slider__button">READ MORE</a>
+                         </div>
                        </div>
-                       <div class="produto__card">
-                        <div class="produto__card-img">
-                           <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
-                        </div>
-                        <div class="produto__card-conteudo">
-                           <div class="produto__card-head">
-                              <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                              <span class="produto__card-sub">Calabresa</span>
-                           </div>
-
-                           <div class="produto__card-body">
-                              <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit.</span>
-                              <div class="produto__card-risco"></div>
-                           </div>
-
-                           <div class="produto__card-tamanho">
-                              <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                              <div class="produto__card-tamanho-flex">
-                                 <div class="produto__card-tamanho-item">900 G</div>
-                                 <div class="produto__card-tamanho-item">900 G</div>
-                                 <div class="produto__card-tamanho-item">900 G</div>
-                              </div>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="produto__card">
-                     <div class="produto__card-img">
-                        <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
+                       <div class="blog-slider__item swiper-slide">
+                         <div class="blog-slider__img">
+                           <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+                         </div>
+                         <div class="blog-slider__content">
+                           <span class="blog-slider__code">26 December 2019</span>
+                           <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                           <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                           <a href="#" class="blog-slider__button">READ MORE</a>
+                         </div>
+                       </div>
+                       
+                       <div class="blog-slider__item swiper-slide">
+                         <div class="blog-slider__img">
+                           <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+                         </div>
+                         <div class="blog-slider__content">
+                           <span class="blog-slider__code">26 December 2019</span>
+                           <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                           <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                           <a href="#" class="blog-slider__button">READ MORE</a>
+                         </div>
+                       </div>
+                       
                      </div>
-                     <div class="produto__card-conteudo">
-                        <div class="produto__card-head">
-                           <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                           <span class="produto__card-sub">Calabresa</span>
-                        </div>
-
-                        <div class="produto__card-body">
-                           <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.</span>
-                           <div class="produto__card-risco"></div>
-                        </div>
-
-                        <div class="produto__card-tamanho">
-                           <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                           <div class="produto__card-tamanho-flex">
-                              <div class="produto__card-tamanho-item">900 G</div>
-                              <div class="produto__card-tamanho-item">900 G</div>
-                              <div class="produto__card-tamanho-item">900 G</div>
-                           </div>
-                        </div>
-                     </div>
-                 </div>
-                 <div class="produto__card">
-                  <div class="produto__card-img">
-                     <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
-                  </div>
-                  <div class="produto__card-conteudo">
-                     <div class="produto__card-head">
-                        <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                        <span class="produto__card-sub">Calabresa</span>
-                     </div>
-
-                     <div class="produto__card-body">
-                        <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit.</span>
-                        <div class="produto__card-risco"></div>
-                     </div>
-
-                     <div class="produto__card-tamanho">
-                        <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                        <div class="produto__card-tamanho-flex">
-                           <div class="produto__card-tamanho-item">900 G</div>
-                           <div class="produto__card-tamanho-item">900 G</div>
-                           <div class="produto__card-tamanho-item">900 G</div>
-                        </div>
-                     </div>
-                  </div>
-              </div>
-              <div class="produto__card">
-               <div class="produto__card-img">
-                  <img src="./assets/img/teste3.png" alt="" class="produto__card-img-img">
-               </div>
-               <div class="produto__card-conteudo">
-                  <div class="produto__card-head">
-                     <span class="produto__card-titulo">PÃO DE QUEIJO</span>
-                     <span class="produto__card-sub">Calabresa</span>
-                  </div>
-
-                  <div class="produto__card-body">
-                     <span class="produto__card-descri">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.</span>
-                     <div class="produto__card-risco"></div>
-                  </div>
-
-                  <div class="produto__card-tamanho">
-                     <span class="produto__card-tamanho-titulo">Tamanho da Embalagem:</span>
-                     <div class="produto__card-tamanho-flex">
-                        <div class="produto__card-tamanho-item">900 G</div>
-                        <div class="produto__card-tamanho-item">900 G</div>
-                        <div class="produto__card-tamanho-item">900 G</div>
-                     </div>
-                  </div>
-               </div>
-           </div>
-                    </div>
-                </div>
-                <div class="produto__btn">
-                  <div class="abraco">
-                     <button type="button" class="prev" onclick="prev()"><i class='bx bx-left-arrow-alt'></i></button>
-                     <button type="button" class="next" onclick="next()"><i class='bx bx-right-arrow-alt' ></i></button>
-                  </div>
-               </div>
-            </div>
-        </section>
-        <!-- Produto section end -->
-
+                     <div class="blog-slider__pagination"></div>
+                   </div>
+                 </article>
+             
+                 <article id="tab_p2" class="panel">
+                   <h3>Contenido Dos</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, dignissimos nam dolor est. Ad vel eum voluptates rerum. Harum quia dolore architecto ducimus, rem porro minus perferendis ab eveniet aliquid!</p>
+                 </article>
+             
+                 <article id="tab_p3" class="panel">
+                   <h3>Contenido Tres</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, dignissimos nam dolor est. Ad vel eum voluptates rerum. Harum quia dolore architecto ducimus, rem porro minus perferendis ab eveniet aliquid!</p>
+                 </article>
+               </section>
+             </div>
+     </section>
 
     <section class="sobre__section" id="Sobre">
         <div class="container">
@@ -301,7 +204,7 @@
             </div>
          </div>
     </section>
-
+    <!-- Produto section end -->
 
 
 
@@ -474,7 +377,6 @@
 
 </footer>
 
-        <script src="assets/js/slider.js"></script>
         <script src="assets/js/script.js"></script>
 </body>
 <!-- FEITO POR: LARISSA V. KICH  -->
