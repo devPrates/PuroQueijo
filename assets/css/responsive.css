@@ -81,6 +81,48 @@
     .footer__conteudo {
         padding: 20px 50px;
     }
+
+    .contato__map iframe {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .home__img {
+        display: none;
+    }
+    .home__info {
+        text-align: center;
+        align-items: center;
+        padding-bottom: 30px;
+        background-image: url(../img/back-responsive.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .logo__img {
+        display: none;
+    }
+    .logo__text{
+        font-size: 14px;
+    }
+
+    .contato__map iframe {
+        width: 600px;
+    }
+
+    .sobre__card-section{
+        flex-wrap: wrap;
+    }
+    .sobre__space{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contato__map iframe {
+        width: 400px;
+    }
 }
 
 
