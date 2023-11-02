@@ -1,0 +1,40 @@
+.about {
+    background-color: var(--background-color-section);
+}
+.cardMVV {
+    width: 322px;
+    height: 296px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre__card-titulo {
+    font-family: var(--font-corpo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sobre__card-sub {
+    width: 266px;
+    font-family: var(--font-corpo);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    color: rgba(54, 54, 54, 0.7);
+}
+
+.sobre__texto {
+    color: #fff;
+    text-align: justify;
+    font-family: var(--font-corpo);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.card__about {
+    margin-top: -5% !important;
+}

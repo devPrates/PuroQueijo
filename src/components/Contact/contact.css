@@ -1,0 +1,29 @@
+
+
+
+.contato__mapa {
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.card__contato {
+    padding: 0px 10px;
+    background-color: var(--grey-100);
+    height: 120px;
+    border-radius: 10px;
+    background-image: url(../../assets/background.png);
+}
+
+.card__contato i {
+    font-size: 24px;
+}
+
+.card__titulo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__sub {
+    font-size: 14px;
+}

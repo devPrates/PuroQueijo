@@ -1,0 +1,56 @@
+.hero {
+    background-color: var(--background-color-section);
+    
+}
+
+.hero_titulo {
+    color: var(--Primary-color-500);
+    font-weight: 400;
+    font-size: 80px;
+    font-family: var(--font-great);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hero_sub {
+    color: var(--grey-100);
+    font-family: var(--font-title);
+    text-align: justify;
+}
+
+
+.hero_btn_produto  {
+    background-color: var(--Primary-color-500);
+    color: var(--grey-100);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 40px;
+    font-family: var(--font-title);
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero_btn_empresa{
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--Primary-color-500);
+    border: 1px rgba(0, 0, 0, 0.4) solid;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 996px){
+    .hero_imagem{
+        display: none;
+    }
+    .hero{
+        margin-bottom: 8%;
+    }
+    .hero_buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero_titulo {
+        text-align: center;
+    } 
+}

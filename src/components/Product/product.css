@@ -1,0 +1,21 @@
+.nav-item button{
+    font-family: var(--font-logo);
+    font-size: 20px;
+    padding: 18px 24px;
+    background: var(--background-color-section);
+    display: inline-block;
+    color: var(--Primary-color-300);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-item button:hover{
+    color: black;
+}
+
+.nav-item > .active{
+    color: var(--color-black) !important;
+    background: var(--Primary-color-500) !important;
+}
+
