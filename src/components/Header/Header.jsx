@@ -24,13 +24,13 @@ function Header() {
                                     <a className="btn menu_btn" href="#Home">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="btn menu_btn" href="#Produtos">Produtos</a>
+                                    <a className="btn menu_btn" href="#Produto">Produtos</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="btn menu_btn" href="#Sobre">Sobre</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="btn menu_btn" href="#">Contato</a>
+                                    <a className="btn menu_btn" href="#Contato">Contato</a>
                                 </li>
                             </ul>
                         </div>

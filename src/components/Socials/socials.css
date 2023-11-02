@@ -1,0 +1,11 @@
+.socials {
+    background-color: #E0871A;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 26px;
+}

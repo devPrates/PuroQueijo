@@ -1,0 +1,13 @@
+.scroll {
+  position: fixed;
+  padding: 10px 15px;
+  font-size: 25px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--Primary-color-500);
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+}
+

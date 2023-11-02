@@ -1,0 +1,57 @@
+.footer {
+    background-color: var(--background-color-section);
+}
+
+.footer__logo {
+    width: 130px;
+}
+
+.footer__logo-name{
+    color: var(--Primary-color-500);
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-logo);
+}
+
+.footer__titulo {
+    color: var(--Primary-color-500);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__item-nav {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.footer__parceiros-img {
+    height: 100px;
+    border-radius: 15px;
+}
+
+.footer__contato {
+    color: #fff;
+}
+
+.footer__contato i{
+    font-size: 22px;
+}
+
+.footer__contato span {
+    font-size: 14px;
+}
+
+.footer__creditos {
+    border-top: 2px #fff solid;
+}
+
+.footer__copy span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer__links a{
+    color: #fff;
+    text-decoration: underline;
+}

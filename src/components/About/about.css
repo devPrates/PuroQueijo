@@ -1,5 +1,6 @@
 .about {
     background-color: var(--background-color-section);
+    padding-bottom: 5%;
 }
 .cardMVV {
     width: 322px;
@@ -36,5 +37,16 @@
 }
 
 .card__about {
-    margin-top: -5% !important;
+    margin-top: -5%;
+}
+
+@media (max-width: 1040px){
+    .about__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card__about {
+        margin-top: 0 !important;
+    }
 }
