@@ -48,9 +48,7 @@
   --grey-600: #6B6B6B;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   font-family: var(--font-title);

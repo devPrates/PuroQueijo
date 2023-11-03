@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/Creditos' element={<Creditos />}/>
           <Route path='/Login' element={<Login />}/>
           <Route path='/admin' element={<Admin />}>
-              <Route path='/admin' element={<Home />}/>
+              <Route path='Home' element={<Home />}/>
               <Route path='Empresa' element={<Empresa />} />
               <Route path='Produtos' element={<Prod />} />
               <Route path='Publicacoes' element={<Publicacoes />} />

@@ -10,9 +10,9 @@ function Footer() {
     return (
         <>
             <section className='footer'>
-                <article className='container d-flex justify-content-between flex-wrap pt-4 mb-4'>
-                    <div className='d-flex justify-content-around w-50'>
-                        <div className='d-flex flex-column align-items-center gap-1'>
+                <article className='footer__content container d-flex justify-content-between pt-4 mb-4'>
+                    <div className='footer__content-1 d-flex justify-content-around w-50'>
+                        <div className=' d-flex flex-column align-items-center gap-1'>
                             <img src={logo} alt="" className='footer__logo' />
                             <span className='footer__logo-name'>Puro Queijo</span>
                         </div>
@@ -27,7 +27,7 @@ function Footer() {
                                 </div>
                         </div>
                     </div>
-                    <div className='d-flex justify-content-around w-50'>
+                    <div className='footer__content-2 d-flex justify-content-around w-50'>
                         <div className='parceiros d-flex flex-column gap-1'>
                             <span className='footer__titulo'>Parceiros</span>
                             <div className='d-flex gap-1'>
@@ -51,7 +51,7 @@ function Footer() {
                         </div>
                     </div>
                 </article>
-                <article className='container footer__creditos d-flex justify-content-between flex-wrap'>
+                <article className='container footer__creditos d-flex justify-content-between'>
                     <div className='footer__copy mt-1 mb-1'>
                         <span>&copy; Copyright 2023 <strong>IFMS & UFMS - Campus Naviraí</strong> Todos os direitos reservados.</span>
                     </div>

@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./header.css";
 import logo from "/Logo.png"
+import Socials from "../Socials/Socials";
 
 function Header() {
     const navigate = useNavigate()
@@ -40,6 +41,9 @@ function Header() {
                                     <a className="btn menu_btn" onClick={voltarHome} href="#Contato">Contato</a>
                                 </li>
                             </ul>
+                            <div className="mt-4 d-flex justify-content-center">
+                                <Socials />
+                            </div>
                         </div>
                     </div>
                 </div>

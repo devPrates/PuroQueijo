@@ -1,37 +1,68 @@
-
-
-
 .contato__mapa {
     width: 600px;
-    height: 400px;
+    height: 430px;
     border-radius: 15px;
 }
 
 .card__contato {
-    padding: 0px 10px;
+    padding: 25px 10px;
     background-color: var(--grey-100);
-    height: 120px;
+    max-width: 160x;
     border-radius: 10px;
     background-image: url(../../assets/background.png);
 }
 
-.card__contato i {
-    font-size: 24px;
+.contato_vertical {
+    border-radius: 10px;
+    background-image: url(../../assets/background.png);
+    background-color: var(--grey-100);
+    padding: 0px 10px;
+    max-width: 118px;
 }
 
+.contato_vertical i{
+    font-size: 35px;
+}
+
+.vertical__titulo {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contato_vertical span {
+    font-size: 12px;
+    text-align: center;
+}
+
+.card__contato i {
+    font-size: 25px;
+}
+
+
+
+
+
 .card__titulo {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .card__sub {
-    font-size: 14px;
+    font-size: 12px;
 }
 
-@media (max-width: 996px){
-    
+.contato__face {
+    border:none;
+    overflow:hidden;
+    height: 130px;
+    width: 340px;
 }
 
-@media (max-width: 996px){
-    
+
+@media (max-width: 430px) {
+    .contato__mapa{
+        width: 340px;
+        height: 300px;
+    }
 }

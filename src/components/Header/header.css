@@ -34,6 +34,11 @@
     width: 80px;
 }
 
+.nav__login {
+    color: #fff;
+    font-size: 34px;
+}
+
 
 @media (max-width: 576px) { 
     

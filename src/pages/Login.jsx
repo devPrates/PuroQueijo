@@ -16,7 +16,7 @@ function Login() {
 
     const autenticar = () => {
         if(nome == user && senha == password){
-            return navigate("/admin")
+            return navigate("/admin/Home")
         } else {
             alert("Email ou senha incoretos")
         }

@@ -4,70 +4,53 @@ import Card from 'react-bootstrap/Card';
 import place from "../../assets/place.jpg"
 
 function Produtos() {
+
     return (
         <>
-            <section className="container mt-5 d-flex flex-column align-items-center" id="Produto">
+            <section className="container mt-5 d-flex flex-column justify-content-center align-items-center" id="Produto">
                 <h1 className="titulo"><span className="titulo__color"> Nossos </span> Produtos</h1>
                 <p className="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim adipisci molestiae ex nobis consectetur odio error fugit</p>
 
-                <div className="produto_tab mt-5 d-flex flex-column align-items-center ">
-                    <ul className="nav nav-pills mb-3 d-flex gap-5" id="pills-tab" role="tablist">
-                        <li className="nav-item" role="presentation">
-                            <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Pão de Queijo</button>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Chipa</button>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <button className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Churros</button>
-                        </li>
-                    </ul>
-                    <div className="tab-content" id="pills-tabContent">
-                        <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabIndex="0">
-                            <div className="d-flex gap-5 flex-wrap mt-4">
-                                <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={place} />
-                                    <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
-                                        </Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                                <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={place} />
-                                    <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
-                                        </Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
+                <section className="w-75">
+                    <div className="accordion" id="accordionExample">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Chipa
+                                </button>
+                            </h2>
+                            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabIndex="0">
-                            <div className="d-flex gap-5 flex-wrap mt-4">
-                                    <Card style={{ width: '18rem' }}>
-                                        <Card.Img variant="top" src={place} />
-                                        <Card.Body>
-                                            <Card.Title>Card Title</Card.Title>
-                                            <Card.Text>
-                                                Some quick example text to build on the card title and make up the
-                                                bulk of the card's content.
-                                            </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
-                                        </Card.Body>
-                                    </Card>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabIndex="0">...</div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
+                </section>
             </section>
         </>
     )

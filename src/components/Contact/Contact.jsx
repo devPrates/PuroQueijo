@@ -5,9 +5,9 @@ import './contact.css'
 function Contato() {
     return (
         <>
-            <section className='container mt-5' id='Contato'>
+            <section className='container mt-5 mb-5' id='Contato'>
                 <h1 className='titulo text-center mt-5'><span className='titulo__color'>Entrar em</span> Contato</h1>
-                <article className='d-flex justify-content-center gap-3 mt-5'>
+                <article className='d-flex justify-content-center gap-3 mt-5 flex-wrap'>
                     <div className=''>
                         <iframe
                             className='contato__mapa'
@@ -15,12 +15,36 @@ function Contato() {
                             frameBorder="0">
                         </iframe>
                     </div>
-                    <div className='d-flex flex-wrap gap-3'>
-                        <CardContato icon='bx bxs-phone-call' titulo="Telefone" info="(67) 99144-4444" />
-                        <CardContato icon='bx bxs-envelope' titulo="Email" info="exemplo@gmail.com" />
-                        <CardContato icon='bx bxs-phone-call' titulo="Telefone" info="(67) 99144-4444" />
+                    <div className='d-flex flex-column gap-2'>
+                        <div className='face'>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpuroqueijo%2F&tabs=timeline&width=340&height=80&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" className="contato__face" scrolling="no" frameBorder="0" ></iframe>
+                        </div>
+                        <div className='d-flex gap-2'>
+                            <CardContato icon='bx bx-phone-incoming' titulo="Telefone" info="(67) 99144-4444" />
+                            <CardContato icon='bx bx-envelope' titulo="Email" info="exemplo@gmail.com" />
+
+                        </div>
+                        <div className='d-flex gap-2'>
+                            <div className='d-flex flex-column gap-2'>
+                                <CardContato icon='bx bxl-whatsapp' titulo="Whatsapp" info="(67) 99144-4444" />
+                                <CardContato icon='bx bxl-instagram' titulo="Instagram" info="@puroqueijo_paodequeijo" />
+                            </div>
+                            <div className='contato_vertical d-flex flex-column align-items-center justify-content-center'>
+                                <i className='bx bx-time-five'></i>
+                                <span className='vertical__titulo'>Atendimento</span>
+                                <span><strong> Segunda a sexta</strong></span>
+                                <span>Das 7h as 11h</span>
+                                <span>&</span>
+                                <span>Das 13h as 17h</span>
+                            </div>
+                        </div>
+
                     </div>
+
                 </article>
+
+
+
 
             </section>
         </>

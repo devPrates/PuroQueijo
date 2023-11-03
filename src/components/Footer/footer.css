@@ -55,3 +55,38 @@
     color: #fff;
     text-decoration: underline;
 }
+
+@media (max-width: 800px){
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__content-2{
+        gap: 50px;
+    }
+    .footer__content-1{
+        gap: 50px;
+    }
+
+    .footer__creditos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer__logo{
+        width: 60px;
+    }
+    .footer__logo-name {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer__content-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__creditos {
+        text-align: center;
+    }
+}
