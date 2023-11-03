@@ -1,0 +1,24 @@
+.barra {
+    height: 70px;
+    background-color: #d8d8d8;
+}
+
+.barra__itens {
+    max-height: 30px;
+    margin: auto 0px;
+}
+
+.barra__btn {
+    color: #718096;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+.barra__btn i {
+    font-size: 24px;
+}
+
+.btn__icons {
+    color: #718096;
+    font-size: 24px;
+}

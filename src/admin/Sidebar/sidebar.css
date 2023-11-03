@@ -1,0 +1,40 @@
+.sidebar{
+    background-color: #d8d8d8;
+    height: 100vh;
+    width: 15%;
+}
+.sidebar__logo {
+    width: 60px;
+}
+.sidebar__risco{
+    border: 2px solid #fff;
+    margin: 0 45px;
+}
+
+.sidebar__titulo{
+    font-size: 22px;
+    color: #000;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: var(--font-logo);
+}
+
+.sidebar__item {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 0 15px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.sidebar__item i{
+    background-color: var(--Secundary-color-100);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar__active {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-color: var(--grey-100);
+}

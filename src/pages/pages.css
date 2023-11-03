@@ -1,0 +1,19 @@
+.login {
+    height: 100vh;
+}
+
+.login__logo {
+    width: 200px;
+}
+
+.login_content {
+    background-color: var(--grey-200);
+    background-image: url(../assets/background.png);
+    max-width: 380px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.admin__flex {
+    height: 100vh;
+}
