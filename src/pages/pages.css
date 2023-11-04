@@ -17,3 +17,36 @@
 .admin__flex {
     height: 100vh;
 }
+
+.nao_encontrado {
+    height: 100vh;
+    background-image: url(../assets/notfound.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.text_notfound {
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.text_notfound h1{
+    font-size: 74px;
+    font-weight: 700;
+}
+
+.text_notfound h2{
+    font-size: 54px;
+}
+
+.text_notfound span{
+    font-size: 24px;
+}
+
+.btn_notfound {
+    width: 15%;
+    padding: 15px 0;
+    font-size: 30px;
+}

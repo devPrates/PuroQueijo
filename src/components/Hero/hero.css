@@ -27,6 +27,11 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.hero_btn_produto:hover {
+    background-color: var(--Primary-color-400);
+    color: var(--grey-100);
+}
 .hero_btn_empresa{
     padding: 10px 40px;
     border-radius: 8px;
@@ -37,6 +42,10 @@
     font-family: var(--font-title);
     font-weight: 500;
     font-size: 18px;
+}
+
+.hero_btn_empresa:hover {
+    color: var(--Primary-color-200);
 }
 
 @media (max-width: 996px){

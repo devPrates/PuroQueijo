@@ -41,9 +41,6 @@ function Header() {
                                     <a className="btn menu_btn" onClick={voltarHome} href="#Contato">Contato</a>
                                 </li>
                             </ul>
-                            <div className="mt-4 d-flex justify-content-center">
-                                <Socials />
-                            </div>
                         </div>
                     </div>
                 </div>

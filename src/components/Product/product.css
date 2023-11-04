@@ -1,1 +1,16 @@
+.card {
+    width: 18rem;
+}
 
+.accordion-button:not(.collapsed) {
+    background-color: var(--background-color-section);
+    color: #fff;
+    font-family: var(--font-logo);
+    font-size: 26px;
+}
+.accordion-button {
+    font-family: var(--font-logo);
+    font-size: 26px;
+    color: #000;
+    background-color: var(--Primary-color-500);
+}

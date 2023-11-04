@@ -1,0 +1,44 @@
+[
+    {   
+        "kay": "1",
+        "Categoria": "Pão de Queijo",
+        "Sabor": "Calabresa",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    },
+    {   
+        "kay": "2",
+        "Categoria": "Pão de Queijo",
+        "Sabor": "Tradicional",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    },
+    {   
+        "kay": "3",
+        "Categoria": "Pão de Queijo",
+        "Sabor": "Calabresa",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    },
+    {   
+        "kay": "4",
+        "Categoria": "Chipa",
+        "Sabor": "Calabresa",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    },
+    {   
+        "kay": "5",
+        "Categoria": "Chipa",
+        "Sabor": "Tradicional",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    },
+    {   
+        "kay": "6",
+        "Categoria": "Churros",
+        "Sabor": "Calabresa",
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
+        "UrlImagem": "../../assets/place.jpg"
+    }
+]
