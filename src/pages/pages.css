@@ -50,3 +50,11 @@
     padding: 15px 0;
     font-size: 30px;
 }
+
+.btn_creditos {
+    background-color: var(--Primary-color-500);
+    width: 150px;
+    font-size: 20px;
+    font-family: var(--font-title);
+    font-weight: 500;
+}

@@ -3,23 +3,24 @@ import {  useNavigate } from "react-router-dom"
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import "./pages.css"
+import senhas from "../json/senhas.json"
 import logo from "/Logo.png"
-import { First } from "react-bootstrap/esm/PageItem"
 
 function Login() {
     const navigate = useNavigate()
-    const user = "admin"
-    const password = 123456
+
 
     const [nome, setNome] = useState('');
     const [senha, setSenha] = useState('');
 
     const autenticar = () => {
-        if(nome == user && senha == password){
-            return navigate("/admin/Home")
-        } else {
-            alert("Email ou senha incoretos")
-        }
+        senhas.map(token =>{
+            if(nome == token.login && senha == token.senha){
+                return navigate("/admin/home")
+            }else {
+                return alert("Email ou senha incorreto! ")
+            }
+        })
     }
     return (
         <>
