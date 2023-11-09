@@ -54,3 +54,12 @@
         margin-top: 0 !important;
     }
 }
+
+@media (max-width: 450px){
+    .sobre__texto {
+        flex-direction: column;
+    }
+    .titulo-sobre {
+        text-align: center;
+    }
+}
