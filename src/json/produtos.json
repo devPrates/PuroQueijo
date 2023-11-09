@@ -3,42 +3,42 @@
         "kay": "1",
         "Categoria": "Pão de Queijo",
         "Sabor": "Calabresa",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../assets/teste3.png"
     },
     {   
         "kay": "2",
         "Categoria": "Pão de Queijo",
         "Sabor": "Tradicional",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../../assets/teste3.png"
     },
     {   
         "kay": "3",
         "Categoria": "Pão de Queijo",
         "Sabor": "Calabresa",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../../assets/teste3.png"
     },
     {   
         "kay": "4",
         "Categoria": "Chipa",
         "Sabor": "Calabresa",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../../assets/teste3.png"
     },
     {   
         "kay": "5",
         "Categoria": "Chipa",
         "Sabor": "Tradicional",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../../assets/teste3.png"
     },
     {   
         "kay": "6",
         "Categoria": "Churros",
         "Sabor": "Calabresa",
-        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos similique voluptatem doloremque labore laudantium nobis adipisci quibusdam ad neque ipsa temporibus esse, nihil fugit incidunt sapiente at repudiandae mollitia.",
-        "UrlImagem": "../../assets/place.jpg"
+        "Descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi",
+        "UrlImagem": "../../assets/teste3.png"
     }
 ]

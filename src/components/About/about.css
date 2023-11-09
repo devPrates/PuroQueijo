@@ -17,6 +17,10 @@
     font-size: 24px;
 }
 
+.titulo-sobre {
+    color: #fff;
+}
+
 .sobre__card-sub {
     width: 266px;
     font-family: var(--font-corpo);

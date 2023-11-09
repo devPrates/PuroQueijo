@@ -1,7 +1,10 @@
 .card {
-    width: 18rem;
+    max-width: 450px;
 }
 
+.card_produto img {
+
+}
 .accordion-button:not(.collapsed) {
     background-color: var(--background-color-section);
     color: #fff;

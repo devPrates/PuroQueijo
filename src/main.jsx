@@ -12,6 +12,7 @@ import Sidebar from './admin/Sidebar/Sidebar.jsx'
 import Admin from './pages/Admin.jsx'
 import Prod from './admin/Produtos/Prod.jsx'
 import Publicacoes from './admin/Publicacoes/Publicacoes.jsx'
+import Redes from './admin/Redes/Redes'
 
 
 
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/admin' element={<Admin />}>
               <Route path='Home' element={<Home />}/>
               <Route path='Empresa' element={<Empresa />} />
+              <Route path='Redes' element={<Redes />} />
               <Route path='Produtos' element={<Prod />} />
               <Route path='Publicacoes' element={<Publicacoes />} />
           </Route>

@@ -8,7 +8,7 @@ function Sobre(){
         <>
                 <section className="about mt-5" id="Sobre">
                     <section className="container d-flex flex-column align-items-center gap-3 w-50">   
-                        <h1 className="mt-4 titulo"><span className="titulo__color"> Quem </span> Somos</h1>
+                        <h1 className="mt-4 titulo titulo-sobre"><span className="titulo__color "> Sobre </span> Nós</h1>
                         <article className="d-flex gap-3 justify-content-center sobre__texto">
                             <p className=""> 
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore tempora, pariatur expedita quidem voluptatem laborum. Voluptates sapiente id ab necessitatibus atque eligendi sint, aut dignissimos ipsum repudiandae nulla nemo.

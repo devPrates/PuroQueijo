@@ -21,11 +21,11 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div className="accordion-body d-flex gap-3">
+                                <div className="accordion-body d-flex gap-3 flex-wrap">
                                     {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Pão de Queijo') {
-                                                return <CardProduto key={produto.kay} />
+                                                return <CardProduto urlImagem={produto.UrlImagem} titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
                                             }
                                         })
                                     }
@@ -39,11 +39,11 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div className="accordion-body d-flex gap-3">
+                                <div className="accordion-body d-flex gap-3 flex-wrap">
                                 {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Chipa') {
-                                                return <CardProduto key={produto.kay} />
+                                                return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
                                             }
                                         })
                                 }
@@ -57,11 +57,11 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
+                                <div className="accordion-body d-flex gap-3 flex-wrap">
                                 {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Churros') {
-                                                return <CardProduto key={produto.kay} />
+                                                return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
                                             }
                                         })
                                 }
