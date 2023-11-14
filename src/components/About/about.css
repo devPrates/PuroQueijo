@@ -1,7 +1,12 @@
 .about {
     background-color: var(--background-color-section);
+    height: 100vh;
 }
 
+.about_image {
+    height: 80%;
+    border-radius: 20px;
+}
 
 .sobre__card-titulo {
     font-family: var(--font-corpo);
@@ -12,6 +17,13 @@
 
 .titulo-sobre {
     color: #fff;
+    font-family: var(--font-title);
+}
+
+.about_content {
+    height: 450px;
+    width: 100%;
+    overflow-y: auto;
 }
 
 .sobre__card-sub {
@@ -34,14 +46,15 @@
 }
 
 .card_about {
-    max-width: 22rem !important;
+    max-width: 14rem !important;
     border: none;
 }
 
 .card_header {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    color: #fff;
     background-color: var(--Primary-color-500);
 }
 
