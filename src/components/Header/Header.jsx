@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./header.css";
 import logo from "/Logo.png"
-import Socials from "../Socials/Socials";
 
 function Header() {
     const navigate = useNavigate()
@@ -12,12 +11,31 @@ function Header() {
 
     return (
         <>
+            <div className="barra-superior">
+                <div className="container d-flex justify-content-between align-items-center p-3">
+                    <div className="d-flex gap-5 contatos_barra">
+                        <div className="d-flex align-items-center gap-2">
+                            <i className='bx bxs-phone'></i>
+                            <span>(67) 99144-4444</span></div>
+                        <div className="d-flex align-items-center gap-2">
+                            <i className='bx bxs-envelope'></i>
+                            <span>exemplo@gmail.com</span>
+                        </div>
+                    </div>
+                    <div className="d-flex gap-3 barra-icons">
+                        <i className='bx bxl-instagram-alt' ></i>
+                        <i className='bx bxl-facebook-square' ></i>
+                        <i className='bx bxl-twitter' ></i>
+                        <i className='bx bxl-linkedin-square' ></i>
+                    </div>
+                </div>
+            </div>
             <nav className="navbar navbar-expand-md">
                 <div className="container">
-                    <Link className="navbar-brand d-flex align-items-center gap-3" to="/login">
-                        <img src={logo} alt="Logomarca da Empresa" className="menu_logo"/>
+                    <div className="navbar-brand d-flex align-items-center gap-3">
+                        <img src={logo} alt="Logomarca da Empresa" className="menu_logo" />
                         <span className="menu_titulo"><span className="titulo_color">Puro</span> Queijo</span>
-                    </Link>
+                    </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -40,6 +58,9 @@ function Header() {
                                 <li className="nav-item">
                                     <a className="btn menu_btn" onClick={voltarHome} href="#Contato">Contato</a>
                                 </li>
+                                <li className="nav-item">
+                                    <Link className="btn btn_login" to="/login" href="#Contato">Login</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -48,6 +69,6 @@ function Header() {
 
         </>
     )
-}
+} 
 
 export default Header

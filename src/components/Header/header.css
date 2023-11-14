@@ -13,21 +13,40 @@
     font-weight: bold;
 }
 
+.contatos_barra {
+    font-size: 14px;
+}
+.contatos_barra i{
+    font-size: 24px;
+}
+.barra-superior {
+    background-color: var(--Primary-color-500);
+}
+
+.barra-icons {
+    font-size: 24px;
+}
+
 .titulo_color {
     color: var(--Primary-color-500);
 }
 .menu_btn{
-    color: #000;
+    color:var(--Primary-color-500);
     font-weight: 400;
-    font-size: 20px;
-    background-color: var(--grey-300);
-    padding: 6px 16px;
-    border-radius: 4px;
-    box-shadow: 8px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
 }
 
-.menu_btn:hover{
+.btn_login {
+    color: #000;
+    font-weight: 700;
+    font-family: var(--font-title);
+    font-size: 20px;
     background-color: var(--Primary-color-500);
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.menu_btn:hover{
+    color: #000;
     transition: .3s;
 }
 .menu_logo {

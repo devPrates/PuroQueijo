@@ -1,14 +1,17 @@
 import "./about.css"
 
-function CardAbout(props){
+function CardAbout(props) {
     return (
         <>
-            <div className="cardMVV d-flex gap-3 flex-column align-items-center justify-content-center text-center">
-               <div className="sobre__card-svg">
-                  <img src={props.imagem} alt={props.alt} />
-               </div>
-               <h3 className="sobre__card-titulo">{props.titulo}</h3>
-               <p className="sobre__card-sub">{props.texto}</p>
+            <div className="card card_about mb-3">
+                <div className="card-header card_header d-flex justify-content-center gap-2">
+                    <img src={props.imagem} alt="" />
+                    <span>{props.titulo}</span>
+                </div>
+                <div className="card-body">
+                    <h5 className="card-title">Secondary card title</h5>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
             </div>
         </>
     )
