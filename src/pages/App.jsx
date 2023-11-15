@@ -8,13 +8,13 @@ import Produtos from "../components/Product/Product"
 import ProdutoTeste from "../components/Product/ProdutoTeste"
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop"
 import Login from "./Login"
+import Admin from "./Admin"
 
 function App() {
 
   return (
     <>
-      
-      <Login />
+      <Admin />
     </>
   )
 }
