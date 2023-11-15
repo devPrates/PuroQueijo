@@ -7,19 +7,14 @@ import Hero from "../components/Hero/Hero"
 import Produtos from "../components/Product/Product"
 import ProdutoTeste from "../components/Product/ProdutoTeste"
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop"
+import Login from "./Login"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <Produtos />
-      <Sobre />
-      <Contato />
-      <Footer />
-      <ProdutoTeste />
-      <ScrollToTop />
+      
+      <Login />
     </>
   )
 }
