@@ -40,13 +40,13 @@ function Produtos() {
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body d-flex gap-3 flex-wrap">
-                                {
+                                    {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Chipa') {
                                                 return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
                                             }
                                         })
-                                }
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -58,13 +58,13 @@ function Produtos() {
                             </h2>
                             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body d-flex gap-3 flex-wrap">
-                                {
+                                    {
                                         produtos.map(produto => {
-                                            if (produto.Categoria === 'Churros') {
+                                            if (produto.Categoria === 'Chipa') {
                                                 return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
                                             }
                                         })
-                                }
+                                    }
                                 </div>
                             </div>
                         </div>

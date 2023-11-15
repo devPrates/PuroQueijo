@@ -21,7 +21,7 @@
 }
 
 .about_content {
-    height: 450px;
+    height: 500px;
     width: 100%;
     overflow-y: auto;
 }
@@ -47,6 +47,7 @@
 
 .card_about {
     max-width: 14rem !important;
+    max-height: 200px;
     border: none;
 }
 
@@ -58,9 +59,20 @@
     background-color: var(--Primary-color-500);
 }
 
-.card_header img {
-    width: 35px;
+.card_body {
+    overflow-y: auto;
 }
+
+.card_header img {
+    width: 30px;
+}
+
+.card_text {
+    font-family: var(--font-title);
+    font-size: 14px;
+    text-align: justify;
+}
+
 
 @media (max-width: 1040px){
     

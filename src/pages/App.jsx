@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import Hero from "../components/Hero/Hero"
 import Produtos from "../components/Product/Product"
+import ProdutoTeste from "../components/Product/ProdutoTeste"
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Sobre />
       <Contato />
       <Footer />
+      <ProdutoTeste />
       <ScrollToTop />
     </>
   )
