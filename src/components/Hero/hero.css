@@ -1,6 +1,6 @@
 .hero {
     background-color: var(--background-color-section);
-    height: 90vh;
+    height: 100vh;
 }
 
 .hero_titulo {
@@ -53,12 +53,26 @@
     color: var(--Primary-color-200);
 }
 
+@media (max-width: 436px) {
+    .hero {
+        padding-bottom: 7%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    
+}
+
+@media (max-width: 768px) { 
+    .hero {
+        padding-bottom: 7%;
+    }
+}
+
 @media (max-width: 996px){
     .hero_imagem{
         display: none;
-    }
-    .hero{
-        margin-bottom: 8%;
     }
     .hero_buttons {
         width: 100%;
@@ -69,8 +83,18 @@
     } 
 }
 
-@media (max-width: 436px) {
-    .hero {
-        padding-bottom: 7%;
+
+@media (max-width: 1200px) { 
+    .hero_imagem {
+        display: none !important;
+    }
+    .hero_texto {
+        display: grid !important;
+        margin: auto;
+    } 
+    .hero_titulo {
+        font-size: 65px;
+        text-align: center;
+        text-shadow: black 0.1em 0.1em 0.2em;
     }
 }

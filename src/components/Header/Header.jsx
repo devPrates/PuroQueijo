@@ -30,7 +30,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <nav className="navbar navbar-expand-md">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <div className="navbar-brand d-flex align-items-center gap-3">
                         <img src={logo} alt="Logomarca da Empresa" className="menu_logo" />

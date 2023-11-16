@@ -15,6 +15,7 @@
 
 .contatos_barra {
     font-size: 14px;
+    color: #fff;
 }
 .contatos_barra i{
     font-size: 24px;
@@ -25,6 +26,7 @@
 
 .barra-icons {
     font-size: 24px;
+    color: #fff;
 }
 
 .titulo_color {
@@ -58,9 +60,25 @@
     font-size: 34px;
 }
 
+@media (max-width: 430px) {
+
+}
 
 @media (max-width: 576px) { 
     
 }
 
-@media (max-width: 768px) {  }
+@media (max-width: 768px) { 
+    .contatos_barra {
+        flex-direction: column;
+        gap: 5px !important;
+    }
+}
+
+@media (max-width: 992px) { 
+
+}
+
+@media (max-width: 1200px) { 
+    
+}
