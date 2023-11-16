@@ -9,10 +9,9 @@ function Produtos() {
     return (
         <>
             <section className="container mt-5 d-flex flex-column justify-content-center align-items-center" id="Produto">
-                <h1 className="titulo"><span className="titulo__color"> Nossos </span> Produtos</h1>
-                <p className="subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim adipisci molestiae ex nobis consectetur odio error fugit</p>
+                <h1 className="titulo text-center mb-5"><span className="titulo__color"> Nossos </span> Produtos</h1>
 
-                <section className="w-75">
+                <section className="acordion_product w-100 mb-5">
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -21,7 +20,7 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div className="accordion-body d-flex gap-3 flex-wrap">
+                                <div className="accordion-body d-flex justify-content-around gap-3 flex-wrap">
                                     {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Pão de Queijo') {
@@ -39,7 +38,7 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div className="accordion-body d-flex gap-3 flex-wrap">
+                                <div className="accordion-body d-flex gap-3 justify-content-around  flex-wrap">
                                     {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Chipa') {
@@ -57,7 +56,7 @@ function Produtos() {
                                 </button>
                             </h2>
                             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div className="accordion-body d-flex gap-3 flex-wrap">
+                                <div className="accordion-body d-flex gap-3 justify-content-around flex-wrap">
                                     {
                                         produtos.map(produto => {
                                             if (produto.Categoria === 'Chipa') {

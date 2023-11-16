@@ -59,10 +59,29 @@
     width: 340px;
 }
 
-
 @media (max-width: 430px) {
     .contato__mapa{
-        width: 340px;
+        width: 380px !important;
+        height: 300px;
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .contato__mapa{
+        width: 450px;
         height: 300px;
     }
+}
+
+@media (max-width: 768px) { 
+
+}
+
+@media (max-width: 992px) { 
+    
+}
+
+@media (max-width: 1200px) { 
+
 }

@@ -7,13 +7,13 @@ function Sidebar() {
     return (
         <>
             <section className="sidebar d-flex flex-column gap-5">
-                <div className="mx-auto d-flex align-items-center gap-2 mt-2">
+                <div className="side__logo mx-auto d-flex align-items-center gap-2 mt-2">
                     <img src={logo} alt="" className="sidebar__logo" />
                     <span className="sidebar__titulo">Puro Queijo</span>
                 </div>
                 <div className=" sidebar__risco"></div>
 
-                <article className="d-flex flex-column gap-3 ">
+                <article className="sidebar__nav d-flex flex-column gap-3 ">
                     <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Home" >
                         <i className='bx bx-home'></i>
                         <span>Home</span>

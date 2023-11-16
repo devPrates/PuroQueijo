@@ -17,3 +17,23 @@
 .produto_menu-item:hover {
     color: black;
 }
+
+@media (max-width: 430px) {
+
+}
+
+@media (max-width: 576px) { 
+    
+}
+
+@media (max-width: 768px) { 
+
+}
+
+@media (max-width: 992px) { 
+
+}
+
+@media (max-width: 1200px) { 
+
+}

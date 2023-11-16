@@ -61,7 +61,9 @@
 
 
 @media (max-width: 576px) { 
-    
+    .hero_buttons{
+        margin: 0px !important;
+    }
 }
 
 @media (max-width: 768px) { 

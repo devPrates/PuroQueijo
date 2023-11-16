@@ -15,10 +15,11 @@ function Contato() {
                             frameBorder="0">
                         </iframe>
                     </div>
-                    <div className='d-flex flex-column gap-2'>
+                    <div className='contato_contato d-flex flex-column gap-2'>
                         <div className='face'>
                             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpuroqueijo%2F&tabs=timeline&width=340&height=80&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" className="contato__face" scrolling="no" frameBorder="0" ></iframe>
                         </div>
+                        <div></div>
                         <div className='d-flex gap-2'>
                             <CardContato icon='bx bx-phone-incoming' titulo="Telefone" info="(67) 99144-4444" />
                             <CardContato icon='bx bx-envelope' titulo="Email" info="exemplo@gmail.com" />
