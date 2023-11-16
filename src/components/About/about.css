@@ -100,7 +100,9 @@
 }
 
 @media (max-width: 576px) { 
-    
+    .cards__sobre {
+        flex-wrap: nowrap !important;
+    }
 }
 
 @media (max-width: 768px) { 
@@ -118,6 +120,10 @@
     }
     .about_content {
         height: 350px !important;
+    }
+    .cards__sobre {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

@@ -54,8 +54,9 @@
 }
 
 @media (max-width: 436px) {
-    .hero {
-        padding-bottom: 7%;
+    .hero{
+        height: 90vh;
+        padding-bottom: 10% !important;
     }
 }
 
@@ -64,15 +65,19 @@
     .hero_buttons{
         margin: 0px !important;
     }
-}
-
-@media (max-width: 768px) { 
-    .hero {
-        padding-bottom: 7%;
+    .hero{
+        height: 80vh !important;
     }
 }
 
+@media (max-width: 768px) { 
+    
+}
+
 @media (max-width: 996px){
+    .hero {
+        height: 70vh !important;
+    }
     .hero_imagem{
         display: none;
     }
@@ -94,6 +99,9 @@
         display: grid !important;
         margin: auto;
     } 
+    .hero{
+        height: 50vh;
+    }
     .hero_titulo {
         font-size: 65px;
         text-align: center;
