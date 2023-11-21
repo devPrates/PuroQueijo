@@ -1,11 +1,21 @@
 import CardProduto from "./CardProduto"
 import "./product.css"
-import produtos from "../../json/produtos.json"
+import axios from "axios"
+import { useState, useEffect } from "react"
 
 
 
 function Produtos() {
+    const [productList, setProductList] = useState([])
 
+    useEffect(() =>{
+        axios.get("https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/produto")
+    .then((res) => {
+        setProductList(res.data)
+    })
+    .catch((err) =>console.error(err))
+    }, [])
+    
     return (
         <>
             <section className="container mt-5 d-flex flex-column justify-content-center align-items-center" id="Produto">
@@ -22,9 +32,9 @@ function Produtos() {
                             <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div className="accordion-body d-flex justify-content-around gap-3 flex-wrap">
                                     {
-                                        produtos.map(produto => {
-                                            if (produto.Categoria === 'Pão de Queijo') {
-                                                return <CardProduto urlImagem={produto.UrlImagem} titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
+                                        productList.map(produto => {
+                                            if (produto.nomeProduto === 'Pão de Queijo') {
+                                                return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                             }
                                         })
                                     }
@@ -40,9 +50,9 @@ function Produtos() {
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body d-flex gap-3 justify-content-around  flex-wrap">
                                     {
-                                        produtos.map(produto => {
-                                            if (produto.Categoria === 'Chipa') {
-                                                return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
+                                         productList.map(produto => {
+                                            if (produto.nomeProduto === 'Chipa') {
+                                                return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                             }
                                         })
                                     }
@@ -58,9 +68,9 @@ function Produtos() {
                             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body d-flex gap-3 justify-content-around flex-wrap">
                                     {
-                                        produtos.map(produto => {
-                                            if (produto.Categoria === 'Chipa') {
-                                                return <CardProduto titulo={produto.Categoria} descricao={produto.Descricao} key={produto.kay} />
+                                         productList.map(produto => {
+                                            if (produto.nomeProduto === 'Churros') {
+                                                return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                             }
                                         })
                                     }

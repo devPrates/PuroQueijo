@@ -9,7 +9,7 @@ function CardAbout(props) {
                     <span> {props.titulo}</span>
                 </div>
                 <div className="card-body card_body">
-                    <p className="card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card_text">{props.texto}</p>
                 </div>
             </div>
         </>

@@ -11,6 +11,7 @@ function CardProduto(props) {
                     <div className="col-md-7">
                         <div className="card-body">
                             <h5 className="card-title">{props.titulo}</h5>
+                            <h6>{props.sabor}</h6>
                             <p className="card-text">{props.descricao}</p>
                             <div className="d-flex w-100 gap-1">
                                 <button className="btn btn-info btn-sm disabled">400 G</button>

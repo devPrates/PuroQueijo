@@ -4,9 +4,21 @@ import visao from "../../assets/visao.png"
 import valores from "../../assets/valores.png"
 import CardAbout from "./CardAbout"
 import sobreImage from "../../assets/sobreImage.jpg"
+import axios from "axios"
+import { useState, useEffect } from "react"
 
 
 function Sobre() {
+    const [dadoSobre, setDadoSobre] = useState([])
+
+    useEffect(() =>{
+        axios.get("https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/empresa/1")
+    .then((res) => {
+        console.log(res.data)
+        setDadoSobre(res.data)
+    })
+    .catch((err) =>console.error(err))
+    }, [])
     return (
         <>
             <section className="about mb-5" id="Sobre">
@@ -17,13 +29,14 @@ function Sobre() {
                     <article className="d-flex flex-column justify-content-around sobre__texto w-50 mb-5">
                         <div className="about_content">
                             <h1 className="mt-4 titulo titulo-sobre"><span className="titulo__color "> Sobre </span> Nós</h1>
-                            <p className="mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore tempora, pariatur expedita quidem voluptatem laborum. Voluptates sapiente id ab necessitatibus atque eligendi sint, aut dignissimos ipsum repudiandae nulla nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at labore quam ipsum fugit reprehenderit quaerat reiciendis quod vitae unde quidem perspiciatis nostrum, quibusdam itaque placeat aliquam dicta ex odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore tempora, pariatur expedita quidem voluptatem laborum. Voluptates sapiente id ab necessitatibus atque eligendi sint, aut dignissimos ipsum repudiandae nulla nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellendus rem reiciendis temporibus dolorum accusantium! Quis cum nulla tenetur consequuntur quod veritatis sed dolorem reiciendis sunt omnis nihil, dolor accusantium!
+                            <p className="mx-auto">
+                                {dadoSobre.sobre}
                             </p>
                         </div>
                         <div className="cards__sobre d-flex gap-2">
-                            <CardAbout imagem={missao} titulo="MISSÃO"/>
-                            <CardAbout imagem={visao} titulo="VISÃO"/>
-                            <CardAbout imagem={valores} titulo="VALORES"/>
+                            <CardAbout imagem={missao} titulo="MISSÃO" texto={dadoSobre.missao}/>
+                            <CardAbout imagem={visao} titulo="VISÃO" texto={dadoSobre.visao}/>
+                            <CardAbout imagem={valores} titulo="VALORES" texto={dadoSobre.valores}/>
                         </div>
                     </article>
                 </section>
