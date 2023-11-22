@@ -1,23 +1,21 @@
 .hero {
     background-color: var(--background-color-section);
-    height: 100vh;
+    height: 85vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero_titulo {
-    color: var(--Primary-color-500);
-    font-weight: 400;
+    color: var(--bg-color-section);
+    font-weight: 600;
     font-size: 85px;
     text-align: center;
     font-family: var(--font-logo);
-    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.hero_imagem img {
-    height: 80%;
-    pointer-events: none
-}
+
 .hero_sub {
-    color: var(--grey-100);
+    color: var(--bg-color-section);
     font-family: var(--font-title);
     text-align: justify;
 }
@@ -25,8 +23,8 @@
 
 .hero_btn_produto  {
     background-color: var(--Primary-color-500);
-    color: var(--grey-100);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.09);
     padding: 10px 40px;
     font-family: var(--font-title);
     font-size: 18px;
@@ -40,71 +38,51 @@
 .hero_btn_empresa{
     padding: 10px 40px;
     border-radius: 8px;
-    background-color: var(--background-color-section);
-    color: var(--Primary-color-500);
-    border: 1px rgba(0, 0, 0, 0.4) solid;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color-section);
+    color: #fff;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.09);
     font-family: var(--font-title);
     font-weight: 500;
     font-size: 18px;
 }
 
 .hero_btn_empresa:hover {
-    color: var(--Primary-color-200);
+    background-color: var(--Secundary-color-400) !important;
+    color: var(--grey-100);
 }
 
 @media (max-width: 436px) {
-    .hero{
-        height: 90vh;
-        padding-bottom: 10% !important;
+    .hero_titulo {
+        font-size: 50px !important;   
     }
 }
 
 
 @media (max-width: 576px) { 
-    .hero_buttons{
-        margin: 0px !important;
-    }
-    .hero{
-        height: 80vh !important;
-    }
+   
 }
 
 @media (max-width: 768px) { 
-    
+    .hero_titulo {
+        font-size: 70px;
+    }
 }
 
 @media (max-width: 996px){
-    .hero {
-        height: 70vh !important;
+    .hero_buttons{
+        margin-left: 0px !important;
     }
-    .hero_imagem{
-        display: none;
-    }
-    .hero_buttons {
-        width: 100%;
-        justify-content: center;
-    }
-    .hero_titulo {
-        text-align: center;
-    } 
 }
 
 
 @media (max-width: 1200px) { 
     .hero_imagem {
-        display: none !important;
+        display: none;
     }
-    .hero_texto {
-        display: grid !important;
-        margin: auto;
-    } 
-    .hero{
-        height: 50vh;
-    }
-    .hero_titulo {
-        font-size: 65px;
-        text-align: center;
-        text-shadow: black 0.1em 0.1em 0.2em;
+    .hero_conteudo {
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        align-items: center;
     }
 }

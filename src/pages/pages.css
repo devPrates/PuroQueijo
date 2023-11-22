@@ -1,17 +1,23 @@
 .login {
-    height: 100vh;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: var(--grey-100);
 }
 
-.login__logo {
-    width: 200px;
+.login_imagem{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.login_content {
-    background-color: var(--grey-200);
-    background-image: url(../assets/background.png);
-    max-width: 380px;
-    height: 500px;
-    border-radius: 30px;
+.btn_logar{
+    background-color: var(--bg-color-section);
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn_logar:hover {
+    background-color: var(--Secundary-color-400);
+    color: #fff;
 }
 
 .admin__flex {

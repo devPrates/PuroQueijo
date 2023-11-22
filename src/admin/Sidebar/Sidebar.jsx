@@ -27,19 +27,26 @@ function Sidebar() {
                         <span>Produtos</span>
                     </NavLink>
                     <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
+                        <i className='bx bxs-user'></i>
+                        <span>Usuarios</span>
+                    </NavLink>
+                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
                         <i className='bx bxs-purchase-tag'></i>
                         <span>Publicações</span>
                     </NavLink>
                     <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Redes">
                         <i className='bx bx-world'></i>
-                        <span>Redes Sociais</span>
+                        <span>Social</span>
                     </NavLink>
                     
-                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
-                        <i className='bx bxs-purchase-tag'></i>
-                        <span>Cadastrar Usuario</span>
-                    </NavLink>
                 </article>
+                <div className="d-flex h-100 gap-2">
+                        <i className='bx bxs-user-circle fs-1' ></i>
+                        <div className="user-text d-flex flex-column gap-0">
+                            <span>Administrador</span>
+                            <samp>admin@puroqueijo.com</samp>
+                        </div>
+                    </div>
             </section>
         </>
     )

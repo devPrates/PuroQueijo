@@ -15,7 +15,7 @@
 
 .contatos_barra {
     font-size: 14px;
-    color: #fff;
+    color: var(--bg-color-section);
 }
 .contatos_barra i{
     font-size: 24px;
@@ -26,14 +26,14 @@
 
 .barra-icons {
     font-size: 24px;
-    color: #fff;
+    color: var(--bg-color-section);
 }
 
 .titulo_color {
-    color: var(--Primary-color-500);
+    color: var(--bg-color-section);
 }
 .menu_btn{
-    color:var(--Primary-color-500);
+    color:var(--bg-color-section);
     font-weight: 400;
     font-size: 24px;
 }
@@ -48,7 +48,7 @@
     border-radius: 4px;
 }
 .menu_btn:hover{
-    color: #000;
+    color: var(--Secundary-color-100);
     transition: .3s;
 }
 .menu_logo {

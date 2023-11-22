@@ -12,9 +12,10 @@
   --font-corpo: 'Nunito';
   --font-great: 'Great Vibes';
   
-
+  /*  cor marrom coco #732C02*/
   /*===== Cores =====*/
-  --background-color-section: #732C02;
+  --background-color-section: #E5AC62;
+  --bg-color-section:  #732C02;
 
 
   /*----- Primaria -----*/
@@ -70,7 +71,7 @@ a {
 }
 
 .titulo__color {
-    color: var(--Primary-color-500) ;
+    color: var(--bg-color-section) ;
 }
 
 .subtitulo {

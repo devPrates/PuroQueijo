@@ -1,5 +1,5 @@
 .sidebar{
-    background-color: #d8d8d8;
+    background-color: var(--background-color-section);
     height: 100vh;
     width: 15%;
 }
@@ -7,7 +7,7 @@
     width: 60px;
 }
 .sidebar__risco{
-    border: 2px solid #fff;
+    border: 2px solid var(--bg-color-section);
     margin: 0 45px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .sidebar__item {
-    background-color: #fff;
+    background-color: var(--Primary-color-500);
     padding: 15px 20px;
     margin: 0 15px;
     border-radius: 10px;
@@ -33,10 +33,12 @@
     padding: 8px;
     border-radius: 5px;
 }
-
+.sidebar__item span{
+    color: #fff;
+    font-weight: 500;
+}
 .active {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    background-color: var(--grey-400);
+    background-color: var(--Primary-color-500);
 }
 
 @media (max-width: 430px) {
