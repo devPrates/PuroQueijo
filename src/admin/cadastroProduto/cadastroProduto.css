@@ -1,0 +1,11 @@
+.cadastro_container{
+    height: 70vh;
+}
+
+.form-dados {
+    overflow-y: auto;
+}
+
+.form-dados::-webkit-scrollbar{
+    width: 10px;
+}

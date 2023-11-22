@@ -1,0 +1,23 @@
+.input_name{
+    width: 90%;
+    margin-left: 5px;
+    color: rgb(36, 35, 42);
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+    background: rgb(251, 251, 251);
+}
+
+.input_select{
+    width: 100%;
+    color: rgb(36, 35, 42);
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+}

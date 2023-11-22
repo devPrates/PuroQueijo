@@ -13,6 +13,7 @@ import Admin from './pages/Admin.jsx'
 import Prod from './admin/Produtos/Prod.jsx'
 import Publicacoes from './admin/Publicacoes/Publicacoes.jsx'
 import Redes from './admin/Redes/Redes'
+import CadastroProduto from './admin/cadastroProduto/cadastroProduto.jsx'
 
 
 
@@ -28,7 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='Home' element={<Home />}/>
               <Route path='Empresa' element={<Empresa />} />
               <Route path='Redes' element={<Redes />} />
-              <Route path='Produtos' element={<Prod />} />
+              <Route path='Produtos' element={<Prod />}/>
+              <Route path='cadastrar-Produto' element={<CadastroProduto/>}/>
               <Route path='Publicacoes' element={<Publicacoes />} />
           </Route>
       </Routes>

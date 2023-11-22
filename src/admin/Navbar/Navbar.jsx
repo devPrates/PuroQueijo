@@ -19,11 +19,11 @@ function Navbar() {
                     <Link className="btn barra__btn d-flex align-items-center gap-1" to="/">
                         <i className='bx bx-user-pin' ></i> Sair
                     </Link>
-                    <div className="d-flex h-100">
+                    <div className="d-flex h-100 gap-2">
                         <i className='bx bxs-user-circle fs-1' ></i>
-                        <div className="d-flex flex-column gap-1">
-                            <span>Username</span>
-                            <span>exemplo@gmail.com</span>
+                        <div className="user-text d-flex flex-column gap-0">
+                            <span>Administrador</span>
+                            <samp>admin@puroqueijo.com</samp>
                         </div>
                     </div>
                 </div>

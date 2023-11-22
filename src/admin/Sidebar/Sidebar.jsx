@@ -22,10 +22,6 @@ function Sidebar() {
                         <i className='bx bxs-objects-vertical-bottom'></i>
                         <span>Empresa</span>
                     </NavLink>
-                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Redes" >
-                        <i className='bx bx-world'></i>
-                        <span>Redes Sociais</span>
-                    </NavLink>
                     <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Produtos" >
                         <i className='bx bxs-add-to-queue'></i>
                         <span>Produtos</span>
@@ -33,6 +29,15 @@ function Sidebar() {
                     <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
                         <i className='bx bxs-purchase-tag'></i>
                         <span>Publicações</span>
+                    </NavLink>
+                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Redes">
+                        <i className='bx bx-world'></i>
+                        <span>Redes Sociais</span>
+                    </NavLink>
+                    
+                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
+                        <i className='bx bxs-purchase-tag'></i>
+                        <span>Cadastrar Usuario</span>
                     </NavLink>
                 </article>
             </section>
