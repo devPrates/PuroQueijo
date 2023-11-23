@@ -20,6 +20,10 @@
 .contatos_barra i{
     font-size: 24px;
 }
+
+.contatos_barra-span {
+    font-weight: 700;
+}
 .barra-superior {
     background-color: var(--Primary-color-500);
 }

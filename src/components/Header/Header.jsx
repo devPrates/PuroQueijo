@@ -16,10 +16,10 @@ function Header() {
                     <div className="d-flex gap-5 contatos_barra">
                         <div className="d-flex align-items-center gap-2">
                             <i className='bx bxs-phone'></i>
-                            <span>(67) 99144-4444</span></div>
+                            <span className="contatos_barra-span">(67) 99144-4444</span></div>
                         <div className="d-flex align-items-center gap-2">
                             <i className='bx bxs-envelope'></i>
-                            <span>exemplo@gmail.com</span>
+                            <span className="contatos_barra-span">exemplo@gmail.com</span>
                         </div>
                     </div>
                     <div className="d-flex gap-3 barra-icons">

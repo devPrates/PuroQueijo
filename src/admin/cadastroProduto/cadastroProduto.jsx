@@ -3,28 +3,57 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 
 
-function CadastroProduto (){
+function CadastroProduto() {
+    {/*https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/produto*/}
     const navigate = useNavigate()
-    const [dadoSobre, setDadoSobre] = useState([])
-    const [nomeProduto,setNomeProduto] = useState()
+    const [nomeProduto, setNomeProduto] = useState()
     const [descricao, setDescricao] = useState()
     const [sabor, setSabor] = useState()
     const [url, setUrl] = useState()
 
-    const criarproduto = async (e) => {
+    const criarproduto =  (e) => {
         e.preventDefault();
-        console.log(nomeProduto +  descricao + sabor + url)
-        const data = {nomeProduto, descricao, sabor, url}
-        //await axios.post("https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/produto", data)
-       // navigate("/admin/Home")
+        console.log(nomeProduto, descricao, sabor, url)
+
+        fetch('https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/produto', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                nomeProduto,
+                descricao,
+                sabor,
+                url,
+            }),
+        })
+        .then((response) => {
+            console.log('Status da resposta:', response.status);
+
+            if (!response.ok) {
+                throw new Error(`Erro na requisição: ${response.statusText}`);
+            }
+
+            return response.json();
+        })
+        .then((responseData) => {
+            console.log('Resposta do servidor:', responseData);
+            // Adicione aqui a lógica que deseja executar após o sucesso da requisição
+            navigate('/caminho-da-pagina-de-sucesso');
+        })
+        .catch((error) => {
+            console.error('Erro ao enviar a requisição:', error.message);
+            // Adicione aqui a lógica para tratar o erro, se necessário
+        });
+
     }
 
     return (
         <>
             <section className="w-75 mx-auto mt-5 d-flex flex-column gap-3">
                 <h1 className="text-center">Cadastrar Produto</h1>
-            <article className="cadastro-container">
-                <form onSubmit={(e) => criarproduto(e)} className="w-100 form-dados">
+                <article className="cadastro-container">
+                    <form onSubmit={(e) => criarproduto(e)} className="w-100 form-dados">
                         <div className="mb-3">
                             <label htmlFor="nome" className="form-label label_form">Nome Produto</label>
                             <input
@@ -37,12 +66,12 @@ function CadastroProduto (){
                         </div>
                         <div className="mb-3">
                             <label htmlFor="descricao" className="form-label label_form">Descrição</label>
-                            <textarea 
-                                className="form-control input_name" 
-                                id="descricao" 
+                            <textarea
+                                className="form-control input_name"
+                                id="descricao"
                                 placeholder="Descrição do Produto"
                                 onChange={(e) => setDescricao(e.target.value)}
-                                rows="3">  
+                                rows="3">
                             </textarea>
                         </div>
                         <div className="mb-3">
@@ -66,9 +95,9 @@ function CadastroProduto (){
                                 onChange={(e) => setUrl(e.target.value)}
                             />
                         </div>
-                </form>
-                <input type="submit" value="Criar Post" className="btn btn-success"/>
-            </article>
+                        <input type="submit" value="Criar Post" className="btn btn-success" />
+                    </form>
+                </article>
             </section>
         </>
     )
