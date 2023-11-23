@@ -13,7 +13,11 @@ import Admin from './pages/Admin.jsx'
 import Prod from './admin/Produtos/Prod.jsx'
 import Publicacoes from './admin/Publicacoes/Publicacoes.jsx'
 import Redes from './admin/Redes/Redes'
-import CadastroProduto from './admin/cadastroProduto/cadastroProduto.jsx'
+import CadastroProduto from './admin/Produtos/cadastroProduto.jsx'
+import UpdateProduto from './admin/Produtos/UpdateProduto.jsx'
+import User from './admin/users/User.jsx'
+import CadastroUsuario from './admin/users/cadastroProduto.jsx'
+import UpdateUser from './admin/users/UpdateUser.jsx'
 
 
 
@@ -30,8 +34,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='Empresa' element={<Empresa />} />
               <Route path='Redes' element={<Redes />} />
               <Route path='Produtos' element={<Prod />}/>
-              <Route path='cadastrar-Produto' element={<CadastroProduto/>}/>
-              <Route path='Publicacoes' element={<Publicacoes />} />
+              <Route path='cadastrar-produto' element={<CadastroProduto/>}/>
+              <Route path='Update-produto/:id' element={<UpdateProduto />}/>
+              <Route path='Usuario' element={<User />} />
+              <Route path='cadastrar-usuario' element={<CadastroUsuario />}/>
+              <Route path='Update-usuario/:id' element={<UpdateUser />}/>
           </Route>
       </Routes>
     </BrowserRouter>

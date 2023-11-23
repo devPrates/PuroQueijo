@@ -8,7 +8,7 @@ function Produtos() {
     const [productList, setProductList] = useState([])
 
     useEffect(() => {
-        axios.get("https://x8ki-letl-twmt.n7.xano.io/api:qttFphyQ/produto")
+        axios.get("http://localhost:3333/produtos")
             .then((res) => {
                 setProductList(res.data)
             })
@@ -29,20 +29,20 @@ function Produtos() {
                 <div className="tab-container d-flex gap-5">
                     <div className='tab_container d-flex flex-column gap-3 pt-4'>
                         <span className="tab_titulo">Produtos</span>
-                        <article className="d-flex flex-column gap-3">
+                        <article className="tabs_item d-flex flex-column gap-3">
                             <div className={`tab ${activeTab === 1 ? 'ativo' : ''}`} onClick={() => changeTab(1)}>Pão de Queijo</div>
                             <div className={`tab ${activeTab === 2 ? 'ativo' : ''}`} onClick={() => changeTab(2)}>Chipa</div>
                             <div className={`tab ${activeTab === 3 ? 'ativo' : ''}`} onClick={() => changeTab(3)}>Churros</div>
                         </article>
                     </div>
-                    <div className='w-75'>
+                    <div className='w-75 prod_section'>
                         <div id="content1" className={`tab-content ${activeTab === 1 ? 'activo' : ''}`}>
                             <h4 className="text-center">Conheça nosso Pão de Queijo</h4>
-                            <div className="product_itens d-flex gap-3 mt-4">
+                            <div className="product_itens d-flex flex-wrap gap-3 mt-4">
                                 {
                                     productList.map(produto => {
-                                        if (produto.nomeProduto === 'Pão de Queijo') {
-                                            return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
+                                        if (produto.nome === 'Pão de Queijo') {
+                                            return <CardProduto titulo={produto.nome} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                         }
                                     })
                                 }
@@ -50,11 +50,11 @@ function Produtos() {
                         </div>
                         <div id="content2" className={`tab-content ${activeTab === 2 ? 'activo' : ''}`}>
                             <h4 className="text-center">Conheça nossa Chipa</h4>
-                            <div className="product_itens d-flex gap-3 mt-4">
+                            <div className="product_itens d-flex flex-wrap gap-3 mt-4">
                                 {
                                     productList.map(produto => {
-                                        if (produto.nomeProduto === 'Chipa') {
-                                            return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
+                                        if (produto.nome === 'Chipa') {
+                                            return <CardProduto titulo={produto.nome} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                         }
                                     })
                                 }
@@ -65,8 +65,8 @@ function Produtos() {
                             <div className="product_itens d-flex gap-3 mt-4">
                                 {
                                     productList.map(produto => {
-                                        if (produto.nomeProduto === 'Churros') {
-                                            return <CardProduto titulo={produto.nomeProduto} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
+                                        if (produto.nome === 'Churros') {
+                                            return <CardProduto titulo={produto.nome} sabor={produto.sabor} descricao={produto.descricao} key={produto.id} />
                                         }
                                     })
                                 }

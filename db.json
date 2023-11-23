@@ -1,0 +1,88 @@
+{
+  "empresa": [
+    {
+      "id": 1,
+      "nomeFantasia": "Queijo Puro",
+      "celular": "(67) 99977-7799",
+      "Telefone": "(67) 3461-4466",
+      "Email": "puroQueijo@gmail.com",
+      "cnpj": "00.000.000/0001-00",
+      "missao": "Fornecer produtos para alimentação com qualidade e sabor único",
+      "visao": "Tornar-se referência na produção de pão de queijo e similares no estado de Mato Grosso do Sul",
+      "valores": "Qualidade, Sabor e Transparência",
+      "sobre": "A história da empresa começou há muito tempo, quando o provedor da família, que hoje é empresário, deixou o cargo de funcionário público em uma das grandes empresas da cidade. Após deixar o cargo que lhe proporcionava ótima qualidade de vida e estabilidade financeira, precisou se reinventar para sustentar a família e seus quatro filhos. A ideia do pão de queijo surgiu a partir desse momento, em que a família já produzia pão de queijo para consumo próprio como tradição. Eles começaram então a produzir pães de queijo para venda, iniciando a produção no fundo da casa onde moravam. Os pães de queijo eram embalados em sacos plásticos sem nome e transportados em caixas térmicas de porta em porta. Com o tempo, ganharam espaço e credibilidade das pessoas que consumiam. Foram dois anos trabalhando de forma manual. Com o aumento da demanda, foi necessário ampliar os negócios. Foi então que planejaram aumentar o espaço com a ajuda de um amigo próximo que teve a oportunidade de experimentar o pão de queijo e também quis expandir o negócio por ser ótimo."
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Pão de Queijo",
+      "sabor": "Tradicional",
+      "descricao": "feito de queijo",
+      "urlImagem": "asdasdasdasdasdasdasda"
+    },
+    {
+      "id": 2,
+      "nome": "Pão de Queijo",
+      "sabor": "Calabresa",
+      "descricao": "feito de queijo mas com calabresa tbm",
+      "urlImagem": "asdasdasdasdasdasdasda"
+    },
+    {
+      "id": 3,
+      "nome": "Pão de Queijo",
+      "sabor": "Queijo Mineiro",
+      "descricao": "asdasdasdasdasda",
+      "urlImagem": "asdasdasdasdasdasdasda"
+    },
+    {
+      "nome": "Chipa",
+      "sabor": "Tradicional",
+      "descricao": "asdasdas",
+      "url": "sdasdasdasdasd",
+      "id": 4
+    },
+    {
+      "nome": "Chipa",
+      "sabor": "Calabresa",
+      "descricao": "asdasdas",
+      "url": "sdasdasdasdasd",
+      "id": 5
+    },
+    {
+      "nome": "Chipa",
+      "sabor": "Tradicional",
+      "descricao": "asdasdas",
+      "url": "sdasdasdasdasd",
+      "id": 6
+    },
+    {
+      "nome": "Churros",
+      "sabor": "Tradicional",
+      "descricao": "asdasdas",
+      "url": "sdasdasdasdasd",
+      "id": 7
+    },
+    {
+      "nome": "Churros",
+      "sabor": "Doce de Leite",
+      "descricao": "asdasdas",
+      "url": "sdasdasdasdasd",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "mail": "admin@puroqueijo.com",
+      "senha": "123456"
+    },
+    {
+      "id": 2,
+      "name": "daniela",
+      "mail": "daniela@puroqueijo.com",
+      "senha": "123456"
+    }
+  ]
+}

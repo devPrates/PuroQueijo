@@ -1,10 +1,11 @@
 import "./home.css"
+import back from "../../assets/fundo-logo-home.png"
 
 function Home() {
     return (
         <>
-            <section className="container mt-5">
-                <h1 className="text-center"> Bem vindo</h1>
+            <section className="container-fluid home_admin d-flex justify-content-center">
+                <img src={back} alt="" className="img_home" />
             </section>
         </>
     )

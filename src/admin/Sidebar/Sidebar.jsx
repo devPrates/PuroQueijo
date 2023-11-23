@@ -26,7 +26,7 @@ function Sidebar() {
                         <i className='bx bxs-add-to-queue'></i>
                         <span>Produtos</span>
                     </NavLink>
-                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Publicacoes" >
+                    <NavLink className="sidebar__item d-flex gap-2 align-items-center" to="Usuario" >
                         <i className='bx bxs-user'></i>
                         <span>Usuarios</span>
                     </NavLink>

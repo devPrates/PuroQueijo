@@ -3,11 +3,11 @@ import { useState, useEffect } from "react"
 import { Link, NavLink, useNavigate } from "react-router-dom"
 
 
-function Prod() {
+function User() {
     const navigate = useNavigate();
     const [dado, setDado] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:3333/produtos")
+        axios.get("http://localhost:3333/users")
             .then((res) => {
                 setDado(res.data)
             })
@@ -19,8 +19,8 @@ function Prod() {
         <>
             <section className="w-75 mx-auto mt-5 d-flex flex-column gap-3">
                 <div className="d-flex justify-content-between w-100">
-                    <h1 className="">Produtos</h1>
-                    <Link className="btn btn-info d-flex align-items-center" to="/admin/cadastrar-produto">+ Cadastrar Produto</Link>
+                    <h1 className="">Usuarios do Sistema</h1>
+                    <Link className="btn btn-info d-flex align-items-center" to="/admin/cadastrar-usuario">+ Cadastrar Usuario</Link>
                 </div>
                 <article className="d-flex justify-content-between gap-5 mt-2">
                     <table className="table ">
@@ -28,8 +28,7 @@ function Prod() {
                             <tr className="table-active">
                                 <th scope="col">#</th>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Sabor</th>
-                                <th scope="col">Descrição</th>
+                                <th scope="col">Email</th>
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>
@@ -38,11 +37,10 @@ function Prod() {
                                 return <tbody className="table-hover" key={item.id}>
                                             <tr>
                                                 <th scope="row">{item.id}</th>
-                                                <td>{item.nome}</td>
-                                                <td>{item.sabor}</td>
-                                                <td>{item.descricao}</td>
+                                                <td>{item.name}</td>
+                                                <td>{item.mail}</td>
                                                 <td className="d-flex gap-1">
-                                                    <Link to={`/admin/Update-produto/${item.id}`} className="btn btn-sm btn-warning"> 
+                                                    <Link to={`/admin/Update-usuario/${item.id}`} className="btn btn-sm btn-warning"> 
                                                         <i className='bx bxs-edit'></i>
                                                     </Link>
                                                     <button onClick={e=> deletaritem(item.id)} className="btn btn-sm btn-danger">
@@ -62,10 +60,10 @@ function Prod() {
 
 
     function deletaritem(id){
-        const conf = window.confirm("Tem certeza que deseja deletar este item? ")
+        const conf = window.confirm("Tem certeza que deseja deletar este usuario? ")
 
         if(conf) {
-            axios.delete('http://localhost:3333/produtos/' +id)
+            axios.delete('http://localhost:3333/users/' +id)
             .then(res =>{
                 alert("item deletado com sucesso!")
                 navigate('/admin/Home')
@@ -74,4 +72,4 @@ function Prod() {
     }
 }
 
-export default Prod
+export default User
