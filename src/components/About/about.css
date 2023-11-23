@@ -21,7 +21,6 @@
 }
 
 .about_content {
-    height: 450px;
     width: 100%;
     overflow-y: auto;
 }
@@ -50,7 +49,7 @@
 }
 
 .sobre__texto {
-    color: #fff;
+    color: var(--bg-color-section);
     text-align: justify;
     font-family: var(--font-corpo);
     font-style: normal;
@@ -59,8 +58,8 @@
 }
 
 .card_about {
-    max-width: 14rem !important;
-    max-height: 200px;
+    width: 250px;
+    height: 190px;
     border: none;
 }
 

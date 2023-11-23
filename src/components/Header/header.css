@@ -38,7 +38,7 @@
 }
 .menu_btn{
     color:var(--bg-color-section);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
 }
 
@@ -51,8 +51,14 @@
     padding: 6px 16px;
     border-radius: 4px;
 }
+
+.btn_login:hover {
+    background-color: var(--Primary-color-400)
+}
+
+
 .menu_btn:hover{
-    color: var(--Secundary-color-100);
+    color: var(--Secundary-color-100) ;
     transition: .3s;
 }
 .menu_logo {
